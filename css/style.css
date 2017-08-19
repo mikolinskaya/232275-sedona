@@ -1,0 +1,55 @@
+@import url(http://allfont.ru/allfont.css?fonts=pt-sans-bold);
+
+
+body {
+  font-family: "PT Sans Regular", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.features-item .features-headline, .benefits-header,
+.features-header b, .result-header, .result-count {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.search-header b {
+  font-size: 24px;
+}
+
+.search-parameters p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-list,.benefits-list,.features-list {
+  list-style:none;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/*
+.nav-item{
+  float: left;
+  padding: 73px 23px ;
+  min-width: 150px;
+}*/
+
+/*
+.features > div.features-item{
+  float: left;
+  background-color: rgb(129,179,210);
+  min-width: 150px;
+}
+
+.features-list .features-item{
+  float: left;
+  background: rgb(236,236,236);
+}
+*/
