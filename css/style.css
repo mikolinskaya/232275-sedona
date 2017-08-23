@@ -1,8 +1,17 @@
-@import url(http://allfont.ru/allfont.css?fonts=pt-sans-bold);
-
+/*
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+      local("PT Sans Regular"),
+      url("/fonts/ptsans.woff") format("woff"),
+      url("/fonts/ptsansbold.woff") format("woff");
+}
+*/
 
 body {
-  font-family: "PT Sans Regular", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 26px;
   color: black;
@@ -34,6 +43,16 @@ body {
   font-weight: bold;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: ret(0 0 0 0);
+  overflow: hidden;
+}
 /*
 .nav-item{
   float: left;

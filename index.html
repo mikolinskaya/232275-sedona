@@ -34,12 +34,12 @@
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </section>
 
-        <section class="features-item">
+        <div class="features-item">
           <h2 class="features-headline">Настоящий городок</h2>
           <p>- №1 -</p>
           <p>Седона - не аттракцион для туристов,
             там течет своя жизнь</p>
-        </section>
+        </div>
 
         <img src="img/city.jpg" min-width="512" height="257" alt="Настоящий городок"/>
 
@@ -105,10 +105,10 @@
           <label for="date-out">Дата выезда:</label>
           <input type="date" id="date-out" name="date-out"><br>
           <label for="adult-count">Взрослые:</label>
-          <input type="text" id="adult-count" name="adult-count">
+          <input type="number" id="adult-count" name="adult-count" value="2"  step="1">
           <label for="child-count">Дети:</label>
-          <input type="text" id="child-count" name="child-count"><br>
-          <input type="submit" value="Найти"/>
+          <input type="number" id="child-count" name="child-count" value="0"  step="1">
+          <button type="submit">Найти</button>
         </form>
       </section>
     </main>
@@ -127,7 +127,9 @@
         </li>
       </ul>
       <p>Website by</p>
-      <img src="img/logo-htmlacademy.svg" width="115" height="42" alt="htmlAcademy">
+      <a href="https://htmlacademy.ru/" target="_blank" class="logo-htmlacademy">
+        <img src="img/logo-htmlacademy.svg" width="115" height="42" alt="HTML Academy">
+      </a>
     </footer>
 
   </body>

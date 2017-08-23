@@ -12,7 +12,11 @@
         <ul class="nav-list">
           <li class="nav-item"><a href="#">Информация</a></li>
           <li class="nav-item"><a href="#">Фото и видео</a></li>
-          <li class="nav-item"><img src="img/logo.png" width="100" height="50" alt="Седона"></li>
+          <li class="nav-item">
+            <a class="logo" href="index.html" rel="home">
+              <img src="img/logo.png" width="100" height="50" alt="Седона">
+            </a>
+          </li>
           <li class="nav-item"><a href="#">Карта штата</a></li>
           <li class="nav-item"><a href="#">Гостиницы</a></li>
         </ul>
@@ -22,14 +26,14 @@
     <main class="container">
       <form class="search-parameters">
         <p>Инфраструктура:</p>
-        <label><input type="checkbox" name="pool" checked>Бассейн</label>
-        <label><input type="checkbox" name="parking">Парковка</label>
-        <label><input type="checkbox" name="wi-fi">Wi-Fi</label>
+        <label><input type="checkbox" name="infrastructure" value="pool" checked>Бассейн</label>
+        <label><input type="checkbox" name="infrastructure" value="parking">Парковка</label>
+        <label><input type="checkbox" name="infrastructure" value="wi-fi">Wi-Fi</label>
 
         <p>Тип жилья:</p>
-        <label><input type="checkbox" name="hotel" checked>Гостиница</label>
-        <label><input type="checkbox" name="motel" checked>Мотель</label>
-        <label><input type="checkbox" name="apartments" checked>Апартаменты</label>
+        <label><input type="checkbox" name="type" value="hotel" checked>Гостиница</label>
+        <label><input type="checkbox" name="type" value="motel" checked>Мотель</label>
+        <label><input type="checkbox" name="type" value="apartments" checked>Апартаменты</label>
 
         <div>
           <p>Стоимость в сутки(Р):</p>
@@ -39,7 +43,9 @@
               <td>До 3000</td>
             </tr>
           </table>
-          <input type="button" name="search" value="Показать">
+          <label class="visually-hidden" for="cost">Цена</label>
+          <input type="range" name="cost" id="cost" min="0" max="4000"  step="100">
+          <button name="search" type="submit">Показать</button>
         </div>
       </form>
 
@@ -48,12 +54,14 @@
           <b class="result-count">Найдено: 3</b>
           <p>Сортировка:</p>
           <ul>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По рейтингу</li>
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
           </ul>
-          <button name="asc"></button>
-          <button name="desc"></button>
+          <label class="visually-hidden" for="asc">По возрастанию</label>
+          <a href="#" name="asc" id="asc">По возрастанию</a>
+          <label class="visually-hidden" for="desc">По убыванию</label>
+          <a href="#" name="desc" id="desc">По убыванию</a>
         </section>
         <ul>
           <li>
@@ -108,7 +116,9 @@
         </li>
       </ul>
       <p>Website by</p>
-      <img src="img/logo-htmlacademy.svg" width="115" height="42" alt="htmlAcademy">
+      <a href="https://htmlacademy.ru/" target="_blank" class="logo-htmlacademy">
+        <img src="img/logo-htmlacademy.svg" width="115" height="42" alt="HTML Academy">
+      </a>
   </footer>
 
   </body>
