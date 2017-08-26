@@ -12,7 +12,11 @@
         <ul class="nav-list">
           <li class="nav-item"><a href="#">Информация</a></li>
           <li class="nav-item"><a href="#">Фото и видео</a></li>
-          <li class="nav-item"><img src="img/logo.png" width="100" height="50" alt="Седона"></li>
+          <li class="nav-item">
+            <a class="logo" href="index.html" rel="home">
+              <img src="img/logo.png" width="100" height="50" alt="Седона">
+            </a>
+          </li>
           <li class="nav-item"><a href="#">Карта штата</a></li>
           <li class="nav-item"><a href="#">Гостиницы</a></li>
         </ul>
@@ -21,6 +25,7 @@
 
     <main class="container">
       <section class="title">
+        <h1 class="visually-hidden">Седона</h2>
         <img src="img/Welcome.png" width="190" height="45" alt="Welcome"><br>
         <img src="img/gorgeous.png" width="255" height="30" alt="to the gorgeous"><br>
         <img src="img/Sedona.png" width="460" height="78" alt="SEDONA"><br>
@@ -28,14 +33,15 @@
       </section>
 
       <section class="features">
-        <section class="features-header">
+        <h2 class="visually-hidden">Достопримечательности Седоны</h2>
+        <div class="features-header">
           <b>Седона - небольшой городок в Аризоне,
-              заслуживающий большего!</b>
+            заслуживающий большего!</b>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        </section>
+      </div>
 
         <div class="features-item">
-          <h2 class="features-headline">Настоящий городок</h2>
+          <h3 class="features-headline">Настоящий городок</h3>
           <p>- №1 -</p>
           <p>Седона - не аттракцион для туристов,
             там течет своя жизнь</p>
@@ -64,7 +70,7 @@
         <img src="img/bridge.jpg" min-width="512" height="257" alt="Мост дьявола"/>
 
         <div class="features-item">
-          <h2>Там есть мост дьявола</h2>
+          <h3 class="features-headline">Там есть мост дьявола</h3>
           <p>- №2 -</p>
           <p>Да, по нему можно пройти! Если конечно
                вы осмелитесь</p>
@@ -72,19 +78,19 @@
 
         <ul class="features-list">
           <li class="features-item">
-            <h2>Небольшая площадь</h2>
+            <h3 class="features-headline">Небольшая площадь</h3>
             <p>- №3 -</p>
             <p>Все достопримечательности<br>
              находятся очень близко</p>
           </li>
           <li class="features-item">
-            <h2>Красивая дорога</h2>
+            <h3 class="features-headline">Красивая дорога</h3>
             <p>- №4 -</p>
             <p>Ехать в Седону из Лас-Вегаса совсем
             не скучно!</p>
           </li>
           <li class="features-item">
-            <h2>Мало туристов</h2>
+            <h3 class="features-headline">Мало туристов</h3>
             <p>- №5 -</p>
             <p>Большинство едет в Гранд Каньон и
             толпится там</p>
@@ -93,11 +99,9 @@
       </section>
 
       <section class="search">
-        <div class="search-header">
-          <b>Заинтересовались?</b>
-          <p>Укажите предполагаемые даты поездки,
+        <h3 class="search-header">Заинтересовались?</h3>
+        <p>Укажите предполагаемые даты поездки,
             и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        </div>
         <form>
           <p class="form-header">Поиск гостиницы в Седоне</p>
           <label for="date-in">Дата заезда:</label>
@@ -107,14 +111,14 @@
           <label for="adult-count">Взрослые:</label>
           <input type="number" id="adult-count" name="adult-count" value="2"  step="1">
           <label for="child-count">Дети:</label>
-          <input type="number" id="child-count" name="child-count" value="0"  step="1">
+          <input type="number" id="child-count" name="child-count" value="0"  step="1"><br>
           <button type="submit">Найти</button>
         </form>
       </section>
     </main>
 
     <footer class="main-footer">
-      <p>#visitsedona</p>
+      <p class="footer-header">#visitsedona</p>
       <ul class="socials">
         <li>
           <a href="https://twitter.com/" target="_blank">Twitter</a>
@@ -126,7 +130,7 @@
           <a href="https://www.youtube.com/" target="_blank">Youtube</a>
         </li>
       </ul>
-      <p>Website by</p>
+      <p class="sign">Website by</p>
       <a href="https://htmlacademy.ru/" target="_blank" class="logo-htmlacademy">
         <img src="img/logo-htmlacademy.svg" width="115" height="42" alt="HTML Academy">
       </a>
