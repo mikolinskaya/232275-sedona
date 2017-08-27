@@ -26,7 +26,7 @@ body {
   line-height: 21px;
   color: black;
   text-transform: uppercase;
-/*  text-align: center;*/
+  text-align: center;
 }
 
 a {
@@ -107,10 +107,16 @@ li.features-item {
   list-style:none;
 }
 
+/*
+.features, .search {
+  text-align: center;
+}*/
+
 .search-parameters {
   color: white;
   background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .form-header {
@@ -259,6 +265,17 @@ li.features-item {
   color: white;
   background-color: transparent;
   border: 2px solid white;
+}
+
+.show-btn:hover,
+.show-btn:focus {
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+.show-btn:active {
+  border: none;
 }
 
 .visually-hidden {
