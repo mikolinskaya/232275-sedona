@@ -10,15 +10,15 @@
     <header class="main-header">
       <nav class="main-nav">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#">Информация</a></li>
-          <li class="nav-item"><a href="#">Фото и видео</a></li>
-          <li class="nav-item">
-            <a class="logo" href="index.html" rel="home">
+          <li><a class="nav-item" href="#">Информация</a></li>
+          <li><a class="nav-item" href="#">Фото и видео</a></li>
+          <li>
+            <a class="nav-item logo" href="index.html" rel="home">
               <img src="img/logo.png" width="100" height="50" alt="Седона">
             </a>
           </li>
-          <li class="nav-item"><a href="#">Карта штата</a></li>
-          <li class="nav-item"><a href="#">Гостиницы</a></li>
+          <li><a class="nav-item" href="#">Карта штата</a></li>
+          <li><a class="nav-item active" href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -45,15 +45,15 @@
             </tr>
           </table>
           <label class="visually-hidden" for="cost">Цена</label>
-          <input type="range" name="cost" id="cost" min="0" max="4000"  step="100">
-          <button name="search" type="submit">Показать</button>
+          <input type="range" name="cost" id="cost" min="0" max="4000"  step="100"><br>
+          <button class="show-btn" name="search" type="submit">Показать</button>
         </div>
       </form>
 
       <section class="search-result">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <b class="result-count">Найдено: 3</b>
-        <section class="order-by">
+        <section class="sort-parameters">
           <h2 class="visually-hidden">Параметры сортировки</h2>
           <p>Сортировка:</p>
           <ul>
@@ -72,8 +72,8 @@
             <h3 class="result-header">Amara Resort & SPA</h3>
             <p>Гостиница</p>
             <p>От 4000 р.</p>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a class="more-btn" href="#">Подробнее</a>
+            <a class="reserve-btn" href="#">Забронировать</a>
             <div class="grade">
               <p>Рейтинг: 8,5</p>
             </div>
@@ -83,8 +83,8 @@
             <h3 class="result-header">Desert Quail INN</h3>
             <p>Мотель</p>
             <p>От 3000 р.</p>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a class="more-btn" href="#">Подробнее</a>
+            <a class="reserve-btn" href="#">Забронировать</a>
             <div class="grade">
               <p>Рейтинг: 8,9</p>
             </div>
@@ -94,8 +94,8 @@
             <h3 class="result-header">Villas at Poco Diablo</h3>
             <p>Апартаменты</p>
             <p>От 2000 р.</p>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a class="more-btn" href="#">Подробнее</a>
+            <a class="reserve-btn" href="#">Забронировать</a>
 
             <div class="grade">
               <p>Рейтинг: 9,2</p>
