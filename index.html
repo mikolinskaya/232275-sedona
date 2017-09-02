@@ -10,17 +10,15 @@
 
     <header class="main-header">
       <nav class="main-nav">
+        <!--div class="main-nav-wrapper"-->
         <ul class="nav-list">
-          <li><a class="nav-item" href="#">Информация</a></li>
-          <li><a class="nav-item" href="#">Фото и видео</a></li>
-          <li>
-            <a class="logo nav-item" href="index.html" rel="home">
-              <img src="img/logo.png" width="100" height="50" alt="Седона">
-            </a>
-          </li>
-          <li><a class="nav-item" href="#">Карта штата</a></li>
-          <li><a class="nav-item" href="#">Гостиницы</a></li>
+          <li class="nav-item"><a href="#">Информация</a></li>
+          <li class="nav-item"><a href="#">Фото и видео</a></li>
+          <li class="nav-item"><a href="#">Карта штата</a></li>
+          <li class="nav-item"><a href="#">Гостиницы</a></li>
         </ul>
+      <!--/div-->
+          <img class="logo"src="img/logo.png" width="140" height="70" alt="Седона">
       </nav>
     </header>
 
@@ -43,12 +41,12 @@
 
         <div class="features-item">
           <h3 class="features-headline">Настоящий городок</h3>
-          <p>- №1 -</p>
+          <p>— №1 —</p>
           <p>Седона - не аттракцион для туристов,
             там течет своя жизнь</p>
         </div>
 
-        <img src="img/city.jpg" width="512" height="257" alt="Настоящий городок"/>
+        <img src="img/city.jpg" class="city-img" alt="Настоящий городок"/>
 
         <ul class="benefits-list">
           <li class="benefits-item">
@@ -64,15 +62,15 @@
           <li class="benefits-item">
             <p class="benefits-header">Сувениры</p>
             <p>Не только китайского, но и местного
-                производства</p>
+                производства!</p>
           </li>
         </ul>
 
-        <img src="img/bridge.jpg" width="512" height="257" alt="Мост дьявола"/>
+        <img src="img/bridge.jpg" class="bridge-img" alt="Мост дьявола"/>
 
         <div class="features-item">
           <h3 class="features-headline">Там есть мост дьявола</h3>
-          <p>- №2 -</p>
+          <p>— №2 —</p>
           <p>Да, по нему можно пройти! Если конечно
                вы осмелитесь</p>
         </div>
@@ -80,19 +78,19 @@
         <ul class="features-list">
           <li class="features-item">
             <h3 class="features-headline">Небольшая площадь</h3>
-            <p>- №3 -</p>
+            <p>— №3 —</p>
             <p>Все достопримечательности<br>
              находятся очень близко</p>
           </li>
           <li class="features-item">
             <h3 class="features-headline">Красивая дорога</h3>
-            <p>- №4 -</p>
+            <p>— №4 —</p>
             <p>Ехать в Седону из Лас-Вегаса совсем
             не скучно!</p>
           </li>
           <li class="features-item">
             <h3 class="features-headline">Мало туристов</h3>
-            <p>- №5 -</p>
+            <p>— №5 —</p>
             <p>Большинство едет в Гранд Каньон и
             толпится там</p>
           </li>
@@ -105,15 +103,19 @@
             и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
         <button class="form-header">Поиск гостиницы в Седоне</button>
-        <form>
-          <label for="date-in">Дата заезда:</label>
+        <form class="search-form">
+          <label for="date-in" class="date-in">Дата заезда:</label>
           <input type="date" id="date-in" name="date-in"><br>
           <label for="date-out">Дата выезда:</label>
           <input type="date" id="date-out" name="date-out"><br>
           <label for="adult-count">Взрослые:</label>
+          <button>-</button>
           <input type="number" id="adult-count" name="adult-count" value="2"  step="1">
+          <button>+</button>
           <label for="child-count">Дети:</label>
-          <input type="number" id="child-count" name="child-count" value="0"  step="1"><br>
+          <button>-</button>
+          <input type="number" id="child-count" name="child-count" value="0"  step="1">
+          <button>+</button><br>
           <button class="search-btn" type="submit">Найти</button>
         </form>
 
@@ -122,22 +124,55 @@
     </main>
 
     <footer class="main-footer">
+      <div class="container">
       <p class="footer-header">#visitsedona</p>
       <ul class="socials">
         <li>
-          <a href="https://twitter.com/" target="_blank">Twitter</a>
+          <a class="social-btn" href="https://twitter.com/" target="_blank">
+            <span class="visually-hidden">Twitter</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="17" height="15" viewBox="0 0 17 15">
+              <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577
+              1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857
+              1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563
+              2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41
+              0-4.164-.46-4.898-1.887 2.271.196 3.893-.422
+              4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228
+              1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328
+              1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854
+              3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
+            </svg>
+          </a>
         </li>
         <li>
-          <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+          <a class="social-btn" href="https://www.facebook.com/" target="_blank">
+            <span class="visually-hidden">Facebook</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+              height="22" viewBox="0 0 12 22">
+              <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4
+              4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+            </svg>
+          </a>
         </li>
         <li>
-          <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+          <a class="social-btn" href="https://www.youtube.com/" target="_blank">
+            <span class="visually-hidden">Youtube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="20" height="16" viewBox="0 0 20 16">
+              <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3
+              3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027
+              11.998V4.002L15.014 8l-8.987 3.998z"/>
+            </svg>
+          </a>
         </li>
       </ul>
-      <p class="sign">Website by</p>
-      <a href="https://htmlacademy.ru/" target="_blank" class="logo-htmlacademy">
+      <div class="footer-copyright">
+      <p>Website by</p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="logo-htmlacademy">
         <img src="img/logo-htmlacademy.svg" width="115" height="42" alt="HTML Academy">
       </a>
+    </div>
+    </div>
     </footer>
 
   </body>
