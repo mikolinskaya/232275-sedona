@@ -6,36 +6,36 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
     <header class="main-header">
       <nav class="main-nav">
+        <!--div class="main-nav-wrapper"-->
         <ul class="nav-list">
-          <li><a class="nav-item" href="#">Информация</a></li>
-          <li><a class="nav-item" href="#">Фото и видео</a></li>
-          <li>
-            <a class="nav-item logo" href="index.html" rel="home">
-              <img src="img/logo.png" width="100" height="50" alt="Седона">
-            </a>
-          </li>
-          <li><a class="nav-item" href="#">Карта штата</a></li>
-          <li><a class="nav-item active" href="#">Гостиницы</a></li>
+          <li class="nav-item"><a href="#">Информация</a></li>
+          <li class="nav-item"><a href="#">Фото и видео</a></li>
+          <li class="nav-item"><a href="#">Карта штата</a></li>
+          <li class="nav-item active"><a href="#">Гостиницы</a></li>
         </ul>
+      <!--/div-->
+          <img class="logo"src="img/logo.png" width="140" height="70" alt="Седона">
       </nav>
     </header>
 
     <main class="container">
       <h2 class="visually-hidden">Параметры поиска</h2>
       <form class="search-parameters">
+        <div class="search-column">
         <p>Инфраструктура:</p>
         <label><input type="checkbox" name="infrastructure" value="pool" checked>Бассейн</label>
         <label><input type="checkbox" name="infrastructure" value="parking">Парковка</label>
         <label><input type="checkbox" name="infrastructure" value="wi-fi">Wi-Fi</label>
-
+      </div>
+<div class="search-column">
         <p>Тип жилья:</p>
         <label><input type="checkbox" name="type" value="hotel" checked>Гостиница</label>
         <label><input type="checkbox" name="type" value="motel" checked>Мотель</label>
         <label><input type="checkbox" name="type" value="apartments" checked>Апартаменты</label>
-
+</div>
+<div class="search-column">
         <div class="cost-parameters">
           <p>Стоимость в сутки(Р):</p>
           <table>
@@ -47,6 +47,7 @@
           <label class="visually-hidden" for="cost">Цена</label>
           <input type="range" name="cost" id="cost" min="0" max="4000"  step="100"><br>
           <button class="show-btn" name="search" type="submit">Показать</button>
+          </div>
         </div>
       </form>
 
@@ -106,28 +107,55 @@
     </main>
 
     <footer class="main-footer">
+      <div class="container">
       <p class="footer-header">#visitsedona</p>
       <ul class="socials">
         <li>
-          <a href="https://twitter.com/" target="_blank">
+          <a class="social-btn" href="https://twitter.com/" target="_blank">
             <span class="visually-hidden">Twitter</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="17" height="15" viewBox="0 0 17 15">
+              <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577
+              1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857
+              1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563
+              2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41
+              0-4.164-.46-4.898-1.887 2.271.196 3.893-.422
+              4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228
+              1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328
+              1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854
+              3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
+            </svg>
           </a>
         </li>
         <li>
-          <a href="https://www.facebook.com/" target="_blank">
+          <a class="social-btn" href="https://www.facebook.com/" target="_blank">
             <span class="visually-hidden">Facebook</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12"
+              height="22" viewBox="0 0 12 22">
+              <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4
+              4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+            </svg>
           </a>
         </li>
         <li>
-          <a href="https://www.youtube.com/" target="_blank">
+          <a class="social-btn" href="https://www.youtube.com/" target="_blank">
             <span class="visually-hidden">Youtube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="20" height="16" viewBox="0 0 20 16">
+              <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3
+              3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027
+              11.998V4.002L15.014 8l-8.987 3.998z"/>
+            </svg>
           </a>
         </li>
       </ul>
-      <p class="sign">Website by</p>
+      <div class="footer-copyright">
+      <p>Website by</p>
       <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="logo-htmlacademy">
         <img src="img/logo-htmlacademy.svg" width="115" height="42" alt="HTML Academy">
       </a>
+    </div>
+    </div>
     </footer>
 
   </body>
