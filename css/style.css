@@ -22,7 +22,7 @@
 
 body {
   min-width: 768px;
-  width: 1200px;
+  max-width: 1200px;
   padding: 0;
   margin: 0;
   margin-left: auto;
@@ -33,6 +33,9 @@ body {
   color: black;
   text-transform: uppercase;
   text-align: center;
+  background-color: #f2f2f2;
+  box-shadow: 5px 0 15px #000101;
+
 }
 
 a {
@@ -56,9 +59,34 @@ img {
   font-weight: bold;
 }
 
+.main-header {
+  background-color: white;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.main-footer {
+  background-color: white;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.features{
+  background-color: white;
+/*  padding-left: 6%;
+  padding-right: 6%;*/
+}
+
+.search {
+  background-color: white;
+/*  padding-left: 6%;
+  padding-right: 6%;*/
+}
+
 .main-nav {
-  margin-left: 73px;
-  margin-right: 73px;
+  /*margin-left: 73px;
+  margin-right: 73px;*/
+
 /*  width: 1200px;*/
 }
 
@@ -104,16 +132,16 @@ img {
   align-items: flex-end;
 }
 
-.nav-item:focus,
-.nav-item:hover  {
+.nav-item a:focus,
+.nav-item a:hover  {
   color: #81b3d2;
 }/*#766357*/
 
-.nav-item:active {
+.nav-item a:active {
   color: rgba(0,0,0,0.3);
 }
 
-.nav-item.active {
+.nav-item a.active {
   color: #766357;
 }
 
@@ -268,12 +296,18 @@ li.features-item {
 }
 
 .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   background-image: url("../img/Angle.png"), url("../img/Sedona.jpg");
   background-repeat: no-repeat;
-  background-size: contain, cover;
-  background-position: bottom, center;
+  background-size: contain, auto;
+  background-position: bottom, 0 -60px;
   background-color: #eeeeee;
-  width: auto;
+/*  min-width: 70%;*/
+  max-width: 100%;
 }
 
 .nav-list,
@@ -417,7 +451,7 @@ li.features-item {
 
 
 .welcome {
-  padding-top: 80px;
+  padding-top: 77px;
   padding-bottom: 12px;
 }
 
