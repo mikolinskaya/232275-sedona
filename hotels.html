@@ -25,15 +25,39 @@
       <form class="search-parameters">
         <div class="search-column">
           <p>Инфраструктура:</p>
-          <label><input type="checkbox" name="infrastructure" value="pool" checked>Бассейн</label>
-          <label><input type="checkbox" name="infrastructure" value="parking">Парковка</label>
-          <label><input type="checkbox" name="infrastructure" value="wi-fi">Wi-Fi</label>
+          <label class="checkbox">
+            <input type="checkbox" name="infrastructure" value="pool" checked class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+            Бассейн
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="infrastructure" value="parking" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+            Парковка
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="infrastructure" value="wi-fi" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+            Wi-Fi
+          </label>
         </div>
         <div class="search-column">
           <p>Тип жилья:</p>
-          <label><input type="checkbox" name="type" value="hotel" checked>Гостиница</label>
-          <label><input type="checkbox" name="type" value="motel" checked>Мотель</label>
-          <label><input type="checkbox" name="type" value="apartments" checked>Апартаменты</label>
+          <label class="checkbox">
+            <input type="checkbox" name="type" value="hotel" checked class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+            Гостиница
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="type" value="motel" checked class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+            Мотель
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" name="type" value="apartments" checked class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+            Апартаменты
+          </label>
         </div>
         <div class="search-column">
           <div class="cost-parameters">
@@ -45,7 +69,14 @@
               </tr>
             </table>
             <label class="visually-hidden" for="cost">Цена</label>
-            <input type="range" name="cost" id="cost" min="0" max="4000"  step="100"><br>
+            <!--input type="range" name="cost" id="cost" min="0" max="4000"  step="100"-->
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
             <button class="show-btn" name="search" type="submit">Показать</button>
           </div>
         </div>
@@ -59,14 +90,22 @@
             <h2 class="visually-hidden">Параметры сортировки</h2>
             <p>Сортировка:</p>
             <ul class="sort-type">
-              <li><a href="#">По цене</a></li>
+              <li><a class=active href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По рейтингу</a></li>
             </ul>
             <label class="visually-hidden">По возрастанию</label>
-            <a class="asc" href="#" name="asc" id="asc">По возрастанию</a>
+            <a class="asc" href="#" name="asc" id="asc">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+              </svg>
+            </a>
             <label class="visually-hidden">По убыванию</label>
-            <a class="desc" href="#" name="desc" id="desc">По убыванию</a>
+            <a class="desc" href="#" name="desc" id="desc">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 10L0 0h11"/>
+              </svg>
+            </a>
           </section>
         </div>
         <hr>
