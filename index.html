@@ -107,7 +107,7 @@
         <div class="map">
         <form class="search-form">
           <div class="search-item">
-            <label for="date-in" class="date-in">Дата заезда:</label>
+            <div><label for="date-in" class="date-in">Дата заезда:</label></div>
             <input type="date" id="date-in" name="date-in" readonly>
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
               <path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363
@@ -129,7 +129,8 @@
             </svg>
           </div>
           <div class="search-item">
-            <label for="date-out">Дата выезда:</label>
+
+            <div><label for="date-out">Дата выезда:</label></div>
             <input type="date" id="date-out" name="date-out" readonly>
             <!--button name="calendar"></button-->
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
@@ -153,13 +154,13 @@
           </div>
           <div class="search-item">
             <div class="adult-count-wrapper">
-              <label for="adult-count">Взрослые:</label>
+              <div><label for="adult-count">Взрослые:</label></div>
               <button class="adult-count minus">-</button>
               <input type="number" id="adult-count" name="adult-count" value="2" step="1" readonly>
               <button class="plus">+</button>
             </div>
             <div class="adult-count-wrapper">
-              <label for="child-count">Дети:</label>
+              <div><label for="child-count">Дети:</label></div>
               <button class="child-count minus">-</button>
               <input type="number" id="child-count" name="child-count" value="0" step="1" readonly>
               <button class="plus">+</button>

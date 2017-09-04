@@ -425,7 +425,7 @@ li.features-item {
   font-weight: 700;
   width: 574px;
   /*height: 396px;*/
-  padding-top: 50px;
+  padding-top: 55px;
 /*  padding-left: 60px;
   padding-right: 60px;
   padding-top: 55px;
@@ -438,27 +438,39 @@ li.features-item {
 
 .search-item {
   display: flex;
+  /*justify-content: space-between;*/
   align-items: center;
   /*flex-wrap: wrap;*/
   width: 460px;
-/*  outline: 2px solid green;*/
+  /*outline: 2px solid green;*/
+  margin-bottom: 30px;
 }
 
 .adult-count-wrapper {
   display: flex;
   align-items: center;
+  width: 320px;
   text-align: center;
+/*  outline: 2px solid yellow;*/
 }
 
-.adult-count-wrapper:nth-child(2) {
+.adult-count-wrapper:nth-child(2) label {
+  margin-left: 45px;
+}
+
+.adult-count.minus {
   margin-left: auto;
 }
-
-.search-item label {
+/*
+.search-item p {
   display: inline-block;
+}
+/*
+.search-item label {
+  display: block;
   vertical-align: center;
   text-align: center;
-}
+}*/
 
 .search-item input {
   display: inline-block;
@@ -476,7 +488,11 @@ li.features-item {
 .search-item input[type="date"] {
   margin-left: auto;
 }
-
+/*
+.search-item svg {
+  display: inline-block;
+}
+*/
 
 .search-item input:hover {
   background-color: #ebebeb;
@@ -579,7 +595,7 @@ li.features-item {
   padding-right: 195px;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: 54px;
+  margin-top: 24px;
   margin-bottom: 56px;
   text-transform: uppercase;
   color: white;
