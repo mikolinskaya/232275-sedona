@@ -106,6 +106,7 @@ img {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+          width: 20%;
 }
 
 .nav-item a {
@@ -219,6 +220,12 @@ img {
   width: 100%;
   list-style: none;
 /*  outline: 2px solid yellow;*/
+}
+
+.nav-list {
+  -webkit-box-pack: flex-start;
+      -ms-flex-pack: flex-start;
+          justify-content: flex-start;
 }
 
 .benefits-item {
@@ -595,22 +602,23 @@ img {
   text-align: center;
 }
 
-.search-item svg {
+.search-item .calendar {
+  width: 38px;
+  height: 38px;
   padding: 8px;
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-color:  #f2f2f2;
 }
 
-.search-item svg path {
-  fill: #a9a9a9;
+.search-item .calendar:hover,
+.search-item .calendar:focus {
+  background-image: url("../img/calendar-black.svg");
 }
 
-.search-item svg:hover path,
-.search-item svg:focus path {
-  fill: black;
-}
-
-.search-item svg:active path {
-  fill: #81b3d2;
+.search-item .calendar:active {
+  background-image: url("../img/calendar-active.svg");
 }
 
 .search-item:nth-child(1) input,
@@ -919,7 +927,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  min-height: 120px;
+  height: 120px;
   background-color: white;
 }
 
@@ -952,7 +960,7 @@ img {
 /*  outline: 2px solid blue;*/
 }
 
-.social-btn{
+.social-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1014,11 +1022,11 @@ img {
 }
 
 .logo-htmlacademy:hover path,
-.logo-htmlacademy:focus path{
+.logo-htmlacademy:focus path {
   fill: #81b3d2;
 }
 
-.logo-htmlacademy:focus path{
+.logo-htmlacademy:focus path {
   fill: #bdbbbc;
 }
 
@@ -1038,7 +1046,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 85px;
+  height: 85px;
   padding-left: 6%;
   padding-right: 6%;
   border-bottom: 1px solid #e5e5e5;
@@ -1151,7 +1159,7 @@ img {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 260px;
+  width: 265px;
   min-height: 93px;
   margin-left: 30px;
   margin-bottom: 5px;
