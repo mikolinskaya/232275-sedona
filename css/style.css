@@ -229,7 +229,7 @@ img {
   width: 33.3333%;
   min-height: 284px;
   /*  max-height: 330px;*/
-  padding-top: 46px;*/
+  padding-top: 46px;
   vertical-align: top;
   position: relative;
   letter-spacing: 0.07px;
@@ -435,7 +435,7 @@ img {
 
 .search-column .checkbox {
   padding-left: 40px;
-  cursor: pointer;s
+  cursor: pointer;
 /*  outline: 2px solid green;*/
 }
 
