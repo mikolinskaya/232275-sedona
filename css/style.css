@@ -66,6 +66,7 @@ img {
 .search {
   display: flex;
   flex-direction: column;
+/*  height: 1300px;*/
   background-color: white;
 }
 
@@ -132,8 +133,9 @@ img {
 .logo {
   position: absolute;
   top: 0;
-  left: calc(50%  - 69px);
-  right: calc(50% - 69px);
+  left: 600px;
+  /*right: calc(50% - 69px);*/
+  /*transform: translateX(-50%);*/
 }
 
 .features{
@@ -323,7 +325,7 @@ img {
   display: block;
   width: 40%;
   margin: 0;
-  margin-bottom: 47px;
+  margin-bottom: 133px;
   line-height: 24px;
 }
 
@@ -351,7 +353,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain, 100% auto;
   background-position: bottom, 0 -82px/*50% 25%*/;
-  background-color: #eeeeee;
+  background-color: #3e6a8d;/*#4b7699;*/
 }
 
 .features-header {
@@ -404,7 +406,7 @@ img {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: 0 -55px;
-  background-color: #eeeeee;
+  background-color: #3e6a8d;
 /*  min-width: 64%;*/
 }
 
@@ -473,9 +475,14 @@ img {
   background-position: left top;
   background-size: 24px 24px;
 }
-
+/* зачем прописывать disabled для check*/
 .checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
   opacity: 0.3;
+}
+
+.checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  /*background-image: url("../img/checkbox-on.svg");*/
+  border: 2px solid #81b3d2; /*надо ли подсвечивать логотип?*/
 }
 
 .map {
@@ -485,6 +492,12 @@ img {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: top;
+}
+
+.modal-form {
+  position: absolute;
+  top: 2083px;
+  left: 384px;
 }
 
 .search-form {
@@ -505,8 +518,8 @@ img {
       flex-wrap: wrap;
 
   /*display: none;*/
-  position: absolute;
-  left: /*388px;*/calc(50% - 285px); /*50% - width/2*/
+/*  position: absolute;*/
+/*  left: /*388px;*//*calc(50% - 285px);*/ /*50% - width/2*/
   width: 570px;
   padding-top: 55px;
 
@@ -642,7 +655,7 @@ img {
   color: #81b3d2;
 }
 
-.search .form-header {
+/*.search*/ .form-header {
   padding-left: 140px;
   padding-right: 140px;
   padding-top: 30px;
@@ -679,6 +692,8 @@ img {
   margin-top: 23px;
   margin-bottom: 55px;
   font-family: inherit;
+  font-size: 21px;
+  font-weight: inherit;
   text-transform: uppercase;
   color: white;
   background-color: #81b3d2;
