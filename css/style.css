@@ -138,6 +138,12 @@ img {
   /*transform: translateX(-50%);*/
 }
 
+.logo:hover,
+.logo:focus,
+.logo:active {
+  /*border: 2px solid #81b3d2;*/
+}
+
 .features{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -475,14 +481,17 @@ img {
   background-position: left top;
   background-size: 24px 24px;
 }
-/* зачем прописывать disabled для check*/
-.checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
-  opacity: 0.3;
+
+.checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator {
+  background-image: url("../img/checkbox-on-disabled.svg");
+}
+
+.checkbox input[type="checkbox"]:disabled:not(:checked) + .checkbox-indicator {
+  background-image: url("../img/checkbox-off-disabled.svg");
 }
 
 .checkbox input[type="checkbox"]:focus + .checkbox-indicator {
-  /*background-image: url("../img/checkbox-on.svg");*/
-  border: 2px solid #81b3d2; /*надо ли подсвечивать логотип?*/
+  border: 2px solid #81b3d2;
 }
 
 .map {
